@@ -1,2 +1,2 @@
 # u12pytpls
-Docker image for python on ubuntu 12.04 with services and tools pre-installed.
+Ubuntu 12.04 + python image preinstalled with services and tools.
