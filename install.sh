@@ -3,7 +3,10 @@
 # install python prereqs
 add-apt-repository -y ppa:fkrull/deadsnakes
 apt-get update
-apt-get install -y libxml2 libxml2-dev libxslt1.1 libxslt1-dev libffi-dev libssl-dev
+dpkg --remove --force-depends libmysqlclient18
+apt-get install libmysqlclient18
+apt-get install -y libxml2 libxml2-dev libxslt1.1 libxslt1-dev libffi-dev libssl-dev libpq-dev
+apt-get install libmysqlclient-dev
 
 # Installing pip-7.1.2
 wget https://bootstrap.pypa.io/3.2/get-pip.py
