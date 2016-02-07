@@ -1,12 +1,12 @@
 language: python
 
 python:
-    - 2.7
+  - 2.7
 
 build:
   pre_ci:
     # Always pull the latest base image to avoid any cached images on the host
-    - docker pull drydock/u12:prod
+    - docker pull drydock/u12pls:prod
     - docker build --rm -t drydock/u12pytpls:tip .
 
   pre_ci_boot:
